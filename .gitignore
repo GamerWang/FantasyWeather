@@ -1,0 +1,11 @@
+# Special File space
+_LocalAssets
+_LocalAssets.meta
+
+# VS solution and project file
+.vscode
+Library
+Packages
+Temp
+*.csproj
+*.sln
