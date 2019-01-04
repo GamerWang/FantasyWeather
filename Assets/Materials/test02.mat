@@ -72,14 +72,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _fresnelPower: 0.43
+    - _fresnelPower: 1.13
     - _node_3507: 0
     - _snowDepth: 0.03
     - _snowLineHight: 0.34
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0.8455882, g: 1, b: 1, a: 1}
     - _FresnelPower: {r: 0.4191176, g: 0.4191176, b: 0.4191176, a: 1}
     - _node_186: {r: 0.47794116, g: 0.47794116, b: 0.47794116, a: 1}
     - _node_3707: {r: 0.8088235, g: 0.78749555, b: 0.7315095, a: 1}

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 44dacf9b8c0e29a4882cccbadbb299e3
+timeCreated: 1545448013
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: 8cd81fc9e22ada7489668156f208499b, type: 3}
+  - _RainSurface1: {fileID: 2800000, guid: 1fc51b15c474b0e4c8b0772684a517bf, type: 3}
+  - _RainSurface2: {fileID: 2800000, guid: 9b75e302f2ce3ad4caca03e7616bf59f, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
