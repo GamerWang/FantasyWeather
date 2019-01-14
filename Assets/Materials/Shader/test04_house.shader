@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-602-OUT,spec-358-OUT,gloss-9243-OUT,emission-9288-OUT;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31972,y:33007,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:8cd81fc9e22ada7489668156f208499b,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:358,x:31972,y:32615,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:31910,y:32858,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.3176895,max:10;n:type:ShaderForge.SFN_Color,id:5114,x:31972,y:33187,ptovrint:False,ptlb:WetColorChange,ptin:_WetColorChange,varname:_ColorTint_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.572549,c2:0.572549,c3:0.572549,c4:1;n:type:ShaderForge.SFN_Multiply,id:602,x:32308,y:32984,varname:node_602,prsc:2|A-7736-RGB,B-5114-RGB;n:type:ShaderForge.SFN_NormalVector,id:4212,x:30536,y:32102,prsc:2,pt:False;n:type:ShaderForge.SFN_Vector4Property,id:9894,x:30526,y:32296,ptovrint:False,ptlb:RainDir,ptin:_RainDir,varname:node_9894,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0,v2:1,v3:0,v4:0;n:type:ShaderForge.SFN_Length,id:443,x:32216,y:32726,varname:node_443,prsc:2|IN-2891-OUT;n:type:ShaderForge.SFN_Multiply,id:9211,x:30763,y:32221,varname:node_9211,prsc:2|A-4212-OUT,B-9894-XYZ;n:type:ShaderForge.SFN_ValueProperty,id:9451,x:30944,y:31997,ptovrint:False,ptlb:RainAngle,ptin:_RainAngle,varname:node_9451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:-0.1;n:type:ShaderForge.SFN_Multiply,id:9243,x:32442,y:32764,varname:node_9243,prsc:2|A-443-OUT,B-1813-OUT;n:type:ShaderForge.SFN_Fresnel,id:3212,x:30801,y:32379,varname:node_3212,prsc:2|EXP-7491-OUT;n:type:ShaderForge.SFN_ValueProperty,id:7491,x:30526,y:32487,ptovrint:False,ptlb:FresnelPower,ptin:_FresnelPower,varname:node_7491,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.2;n:type:ShaderForge.SFN_Set,id:3679,x:31472,y:32262,varname:WetMask,prsc:2|IN-5849-OUT;n:type:ShaderForge.SFN_Get,id:2891,x:31992,y:32726,varname:node_2891,prsc:2|IN-3679-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:4058,x:31670,y:31910,ptovrint:False,ptlb:RainSurface1,ptin:_RainSurface1,varname:node_4058,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:1fc51b15c474b0e4c8b0772684a517bf,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2dAsset,id:9767,x:31670,y:32116,ptovrint:False,ptlb:RainSurface2,ptin:_RainSurface2,varname:node_9767,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:9b75e302f2ce3ad4caca03e7616bf59f,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Time,id:9470,x:31493,y:32381,varname:node_9470,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:4997,x:32036,y:31954,varname:node_4997,prsc:2,tex:1fc51b15c474b0e4c8b0772684a517bf,ntxv:0,isnm:False|TEX-4058-TEX;n:type:ShaderForge.SFN_Lerp,id:8595,x:32408,y:32142,varname:node_8595,prsc:2|A-4997-RGB,B-9887-RGB,T-9146-OUT;n:type:ShaderForge.SFN_Set,id:4436,x:32630,y:32178,varname:RainSurface,prsc:2|IN-8595-OUT;n:type:ShaderForge.SFN_Get,id:8364,x:32208,y:33209,varname:node_8364,prsc:2|IN-4436-OUT;n:type:ShaderForge.SFN_Tex2d,id:9887,x:32021,y:32159,varname:node_9887,prsc:2,tex:9b75e302f2ce3ad4caca03e7616bf59f,ntxv:0,isnm:False|TEX-9767-TEX;n:type:ShaderForge.SFN_Frac,id:2668,x:32021,y:32364,varname:node_2668,prsc:2|IN-9333-OUT;n:type:ShaderForge.SFN_Step,id:9146,x:32189,y:32364,varname:node_9146,prsc:2|A-2668-OUT,B-4675-OUT;n:type:ShaderForge.SFN_Vector1,id:4675,x:32003,y:32487,varname:node_4675,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Get,id:6986,x:31937,y:33395,varname:node_6986,prsc:2|IN-3679-OUT;n:type:ShaderForge.SFN_Multiply,id:9288,x:32498,y:33191,varname:node_9288,prsc:2|A-8364-OUT,B-9697-OUT;n:type:ShaderForge.SFN_Length,id:4004,x:32147,y:33342,varname:node_4004,prsc:2|IN-6986-OUT;n:type:ShaderForge.SFN_Append,id:9697,x:32313,y:33324,varname:node_9697,prsc:2|A-4004-OUT,B-4004-OUT,C-4004-OUT;n:type:ShaderForge.SFN_Multiply,id:9333,x:31801,y:32429,varname:node_9333,prsc:2|A-9470-T,B-8256-OUT;n:type:ShaderForge.SFN_ValueProperty,id:8256,x:31493,y:32551,ptovrint:False,ptlb:ChangeSpeed,ptin:_ChangeSpeed,varname:node_8256,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:5;n:type:ShaderForge.SFN_Smoothstep,id:5849,x:31267,y:32187,varname:node_5849,prsc:2|A-9451-OUT,B-63-OUT,V-697-OUT;n:type:ShaderForge.SFN_Vector1,id:63,x:30920,y:32119,varname:node_63,prsc:2,v1:1;n:type:ShaderForge.SFN_Multiply,id:697,x:31001,y:32283,varname:node_697,prsc:2|A-9211-OUT,B-3212-OUT;proporder:7736-358-1813-5114-9894-9451-7491-4058-9767-8256;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-602-OUT,spec-358-OUT,gloss-9243-OUT,emission-9288-OUT;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31972,y:33007,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:8cd81fc9e22ada7489668156f208499b,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:358,x:31972,y:32615,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:31910,y:32858,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.3176895,max:10;n:type:ShaderForge.SFN_Color,id:5114,x:31972,y:33187,ptovrint:False,ptlb:WetColorChange,ptin:_WetColorChange,varname:_ColorTint_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.572549,c2:0.572549,c3:0.572549,c4:1;n:type:ShaderForge.SFN_Multiply,id:602,x:32308,y:32984,varname:node_602,prsc:2|A-7736-RGB,B-5114-RGB;n:type:ShaderForge.SFN_NormalVector,id:4212,x:30496,y:32099,prsc:2,pt:False;n:type:ShaderForge.SFN_Vector4Property,id:9894,x:30496,y:32273,ptovrint:False,ptlb:RainDir,ptin:_RainDir,varname:node_9894,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0,v2:1,v3:0,v4:0;n:type:ShaderForge.SFN_ValueProperty,id:9451,x:30705,y:31937,ptovrint:False,ptlb:RainAngle,ptin:_RainAngle,varname:node_9451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:-0.05;n:type:ShaderForge.SFN_Multiply,id:9243,x:32442,y:32764,varname:node_9243,prsc:2|A-2891-OUT,B-1813-OUT;n:type:ShaderForge.SFN_Fresnel,id:3212,x:30766,y:32471,varname:node_3212,prsc:2|EXP-7491-OUT;n:type:ShaderForge.SFN_ValueProperty,id:7491,x:30512,y:32525,ptovrint:False,ptlb:FresnelPower,ptin:_FresnelPower,varname:node_7491,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.5;n:type:ShaderForge.SFN_Set,id:3679,x:31472,y:32262,varname:WetMask,prsc:2|IN-697-OUT;n:type:ShaderForge.SFN_Get,id:2891,x:31992,y:32726,varname:node_2891,prsc:2|IN-3679-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:4058,x:31670,y:31910,ptovrint:False,ptlb:RainSurface1,ptin:_RainSurface1,varname:node_4058,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:1fc51b15c474b0e4c8b0772684a517bf,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2dAsset,id:9767,x:31670,y:32116,ptovrint:False,ptlb:RainSurface2,ptin:_RainSurface2,varname:node_9767,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:9b75e302f2ce3ad4caca03e7616bf59f,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Time,id:9470,x:31493,y:32381,varname:node_9470,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:4997,x:32036,y:31954,varname:node_4997,prsc:2,tex:1fc51b15c474b0e4c8b0772684a517bf,ntxv:0,isnm:False|TEX-4058-TEX;n:type:ShaderForge.SFN_Lerp,id:8595,x:32408,y:32142,varname:node_8595,prsc:2|A-4997-RGB,B-9887-RGB,T-9146-OUT;n:type:ShaderForge.SFN_Set,id:4436,x:32630,y:32178,varname:RainSurface,prsc:2|IN-8595-OUT;n:type:ShaderForge.SFN_Get,id:8364,x:32189,y:33187,varname:node_8364,prsc:2|IN-4436-OUT;n:type:ShaderForge.SFN_Tex2d,id:9887,x:32021,y:32159,varname:node_9887,prsc:2,tex:9b75e302f2ce3ad4caca03e7616bf59f,ntxv:0,isnm:False|TEX-9767-TEX;n:type:ShaderForge.SFN_Frac,id:2668,x:32021,y:32364,varname:node_2668,prsc:2|IN-9333-OUT;n:type:ShaderForge.SFN_Step,id:9146,x:32189,y:32364,varname:node_9146,prsc:2|A-2668-OUT,B-4675-OUT;n:type:ShaderForge.SFN_Vector1,id:4675,x:32003,y:32487,varname:node_4675,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Get,id:6986,x:31793,y:33401,varname:node_6986,prsc:2|IN-3679-OUT;n:type:ShaderForge.SFN_Multiply,id:9288,x:32420,y:33173,varname:node_9288,prsc:2|A-8364-OUT,B-6986-OUT;n:type:ShaderForge.SFN_Multiply,id:9333,x:31801,y:32429,varname:node_9333,prsc:2|A-9470-T,B-8256-OUT;n:type:ShaderForge.SFN_ValueProperty,id:8256,x:31493,y:32551,ptovrint:False,ptlb:ChangeSpeed,ptin:_ChangeSpeed,varname:node_8256,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:5;n:type:ShaderForge.SFN_Smoothstep,id:5849,x:30988,y:32077,varname:node_5849,prsc:2|A-9451-OUT,B-63-OUT,V-6120-OUT;n:type:ShaderForge.SFN_Vector1,id:63,x:30705,y:32025,varname:node_63,prsc:2,v1:0.2;n:type:ShaderForge.SFN_Multiply,id:697,x:31292,y:32400,varname:node_697,prsc:2|A-5849-OUT,B-9119-OUT;n:type:ShaderForge.SFN_RemapRange,id:9119,x:31012,y:32489,varname:node_9119,prsc:2,frmn:0,frmx:1,tomn:0.1,tomx:0.8|IN-3212-OUT;n:type:ShaderForge.SFN_Dot,id:6120,x:30748,y:32179,varname:node_6120,prsc:2,dt:0|A-4212-OUT,B-9894-XYZ;proporder:7736-358-1813-5114-9894-9451-7491-4058-9767-8256;pass:END;sub:END;*/
 
 Shader "Shader Forge/test04_house" {
     Properties {
@@ -10,8 +10,8 @@ Shader "Shader Forge/test04_house" {
         _Gloss ("Gloss", Range(0, 10)) = 0.3176895
         _WetColorChange ("WetColorChange", Color) = (0.572549,0.572549,0.572549,1)
         _RainDir ("RainDir", Vector) = (0,1,0,0)
-        _RainAngle ("RainAngle", Float ) = -0.1
-        _FresnelPower ("FresnelPower", Float ) = 0.2
+        _RainAngle ("RainAngle", Float ) = -0.05
+        _FresnelPower ("FresnelPower", Float ) = 0.5
         _RainSurface1 ("RainSurface1", 2D) = "white" {}
         _RainSurface2 ("RainSurface2", 2D) = "white" {}
         _ChangeSpeed ("ChangeSpeed", Float ) = 5
@@ -116,10 +116,11 @@ Shader "Shader Forge/test04_house" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float node_63 = 1.0;
-                float3 WetMask = smoothstep( float3(_RainAngle,_RainAngle,_RainAngle), float3(node_63,node_63,node_63), ((i.normalDir*_RainDir.rgb)*pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)) );
-                float gloss = (length(WetMask)*_Gloss);
-                float perceptualRoughness = 1.0 - (length(WetMask)*_Gloss);
+                float node_697 = (smoothstep( _RainAngle, 0.2, dot(i.normalDir,_RainDir.rgb) )*(pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)*0.7+0.1));
+                float WetMask = node_697;
+                float node_2891 = WetMask;
+                float gloss = (node_2891*_Gloss);
+                float perceptualRoughness = 1.0 - (node_2891*_Gloss);
                 float roughness = perceptualRoughness * perceptualRoughness;
                 float specPow = exp2( gloss * 10.0 + 1.0 );
 /////// GI Data:
@@ -211,8 +212,8 @@ Shader "Shader Forge/test04_house" {
                 float4 node_9887 = tex2D(_RainSurface2,TRANSFORM_TEX(i.uv0, _RainSurface2));
                 float4 node_9470 = _Time;
                 float3 RainSurface = lerp(node_4997.rgb,node_9887.rgb,step(frac((node_9470.g*_ChangeSpeed)),0.5));
-                float node_4004 = length(WetMask);
-                float3 emissive = (RainSurface*float3(node_4004,node_4004,node_4004));
+                float node_6986 = WetMask;
+                float3 emissive = (RainSurface*node_6986);
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -306,10 +307,11 @@ Shader "Shader Forge/test04_house" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float node_63 = 1.0;
-                float3 WetMask = smoothstep( float3(_RainAngle,_RainAngle,_RainAngle), float3(node_63,node_63,node_63), ((i.normalDir*_RainDir.rgb)*pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)) );
-                float gloss = (length(WetMask)*_Gloss);
-                float perceptualRoughness = 1.0 - (length(WetMask)*_Gloss);
+                float node_697 = (smoothstep( _RainAngle, 0.2, dot(i.normalDir,_RainDir.rgb) )*(pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)*0.7+0.1));
+                float WetMask = node_697;
+                float node_2891 = WetMask;
+                float gloss = (node_2891*_Gloss);
+                float perceptualRoughness = 1.0 - (node_2891*_Gloss);
                 float roughness = perceptualRoughness * perceptualRoughness;
                 float specPow = exp2( gloss * 10.0 + 1.0 );
 ////// Specular:
@@ -424,17 +426,18 @@ Shader "Shader Forge/test04_house" {
                 float4 node_9887 = tex2D(_RainSurface2,TRANSFORM_TEX(i.uv0, _RainSurface2));
                 float4 node_9470 = _Time;
                 float3 RainSurface = lerp(node_4997.rgb,node_9887.rgb,step(frac((node_9470.g*_ChangeSpeed)),0.5));
-                float node_63 = 1.0;
-                float3 WetMask = smoothstep( float3(_RainAngle,_RainAngle,_RainAngle), float3(node_63,node_63,node_63), ((i.normalDir*_RainDir.rgb)*pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)) );
-                float node_4004 = length(WetMask);
-                o.Emission = (RainSurface*float3(node_4004,node_4004,node_4004));
+                float node_697 = (smoothstep( _RainAngle, 0.2, dot(i.normalDir,_RainDir.rgb) )*(pow(1.0-max(0,dot(normalDirection, viewDirection)),_FresnelPower)*0.7+0.1));
+                float WetMask = node_697;
+                float node_6986 = WetMask;
+                o.Emission = (RainSurface*node_6986);
                 
                 float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
                 float3 diffColor = (_MainTex_var.rgb*_WetColorChange.rgb);
                 float specularMonochrome;
                 float3 specColor;
                 diffColor = DiffuseAndSpecularFromMetallic( diffColor, _Metallic, specColor, specularMonochrome );
-                float roughness = 1.0 - (length(WetMask)*_Gloss);
+                float node_2891 = WetMask;
+                float roughness = 1.0 - (node_2891*_Gloss);
                 o.Albedo = diffColor + specColor * roughness * roughness * 0.5;
                 
                 return UnityMetaFragment( o );

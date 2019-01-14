@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 68e643658dd1e734987bd1ff01562c32
+timeCreated: 1547350499
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Noise: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+  - _SnowMask: {fileID: 2800000, guid: 47e5701c7b86abe43877f22898702482, type: 3}
+  - _GroundTexture: {fileID: 2800000, guid: f8f4c748a3bd61d4a860b2046960d9c6, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
